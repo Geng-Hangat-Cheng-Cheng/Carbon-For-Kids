@@ -1,0 +1,1000 @@
+fileFormatVersion: 2
+guid: 9db732507badaed42ac9bfc1b41444eb
+timeCreated: 1495674156
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: red_anim_0
+    21300002: red_anim_1
+    21300004: red_anim_2
+    21300006: red_anim_3
+    21300008: red_anim_4
+    21300010: red_anim_5
+    21300012: red_anim_6
+    21300014: red_anim_7
+    21300016: red_anim_8
+    21300018: red_anim_9
+    21300020: red_anim_10
+    21300022: red_anim_11
+    21300024: red_anim_12
+    21300026: red_anim_13
+    21300028: red_anim_14
+    21300030: red_anim_15
+    21300032: red_anim_16
+    21300034: red_anim_17
+    21300036: red_anim_18
+    21300038: red_anim_19
+    21300040: red_anim_20
+    21300042: red_anim_21
+    21300044: red_anim_22
+    21300046: red_anim_23
+    21300048: red_anim_24
+    21300050: red_anim_25
+    21300052: red_anim_26
+    21300054: red_anim_27
+    21300056: red_anim_28
+    21300058: red_anim_29
+    21300060: red_anim_30
+    21300062: red_anim_31
+    21300064: red_anim_32
+    21300066: red_anim_33
+    21300068: red_anim_34
+    21300070: red_anim_35
+    21300072: red_anim_36
+    21300074: red_anim_37
+    21300076: red_anim_38
+    21300078: red_anim_39
+    21300080: red_anim_40
+    21300082: red_anim_41
+    21300084: red_anim_42
+    21300086: red_anim_43
+    21300088: red_anim_44
+    21300090: red_anim_45
+    21300092: red_anim_46
+    21300094: red_anim_47
+    21300096: red_anim_48
+    21300098: red_anim_49
+    21300100: red_anim_50
+    21300102: red_anim_51
+    21300104: red_anim_52
+    21300106: red_anim_53
+    21300108: red_anim_54
+    21300110: red_anim_55
+    21300112: red_anim_56
+    21300114: red_anim_57
+    21300116: red_anim_58
+    21300118: red_anim_59
+    21300120: red_anim_60
+    21300122: red_anim_61
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: tvOS
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: red_anim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3210
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 3210
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_2
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 3210
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_3
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 3210
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_4
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 3210
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_5
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 3210
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2889
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_7
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 2889
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_8
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 2889
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_9
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 2889
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_10
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 2889
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_11
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 2889
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2568
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_13
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 2568
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_14
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 2568
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_15
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 2568
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_16
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 2568
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_17
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 2568
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2247
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_19
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 2247
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_20
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 2247
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_21
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 2247
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_22
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 2247
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_23
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 2247
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1926
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_25
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1926
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_26
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1926
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_27
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1926
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_28
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1926
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_29
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1926
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1605
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_31
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1605
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_32
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1605
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_33
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1605
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_34
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1605
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_35
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1605
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1284
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_37
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1284
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_38
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1284
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_39
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1284
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_40
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1284
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_41
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1284
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 963
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_43
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 963
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_44
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 963
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_45
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 963
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_46
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 963
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_47
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 963
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 642
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_49
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 642
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_50
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 642
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_51
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 642
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_52
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 642
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_53
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 642
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 321
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_55
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 321
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_56
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 321
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_57
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 321
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_58
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 321
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_59
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 321
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: red_anim_61
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 328
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

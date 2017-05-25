@@ -25,9 +25,6 @@
                 <key id="3" time="901">
                     <object_ref id="0" timeline="0" key="3" z_index="0"/>
                 </key>
-                <key id="4" time="1000">
-                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
-                </key>
             </mainline>
             <timeline id="0" name="1">
                 <key id="0">
@@ -58,9 +55,6 @@
                     <object_ref id="0" timeline="0" key="2" z_index="0"/>
                 </key>
                 <key id="3" time="900">
-                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
-                </key>
-                <key id="4" time="1000">
                     <object_ref id="0" timeline="0" key="3" z_index="0"/>
                 </key>
             </mainline>
