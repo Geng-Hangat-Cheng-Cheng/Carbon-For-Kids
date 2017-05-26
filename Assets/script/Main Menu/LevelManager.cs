@@ -7,10 +7,14 @@ public class LevelManager : MonoBehaviour {
     //ref object 
     public Transform mainMenu, settingsMenu, aboutMenu;
 
-    //load levela
-    public void LoadScene(string name)
+    public AudioSource source;
+    public AudioClip hover;
+    public AudioClip click;
+
+    //load level
+    public void LoadScene()
     {
-        Application.LoadLevel(name);
+        Application.LoadLevel("Other Scene");
     }
 
     //setting button change
@@ -41,6 +45,16 @@ public class LevelManager : MonoBehaviour {
             aboutMenu.gameObject.SetActive(clicked);
             mainMenu.gameObject.SetActive(true);
         }
+    }
+
+    public void Onhover()
+    {
+        source.PlayOneShot(hover);
+    }
+
+    public void OnClick()
+    {
+        source.PlayOneShot(click);
     }
 
 }
