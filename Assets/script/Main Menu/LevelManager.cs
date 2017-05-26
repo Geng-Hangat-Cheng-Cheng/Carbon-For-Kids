@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
     
@@ -14,7 +15,7 @@ public class LevelManager : MonoBehaviour {
     //load level
     public void LoadScene()
     {
-        Application.LoadLevel("Other Scene");
+        SceneManager.LoadScene("Other Scene");
     }
 
     //setting button change
