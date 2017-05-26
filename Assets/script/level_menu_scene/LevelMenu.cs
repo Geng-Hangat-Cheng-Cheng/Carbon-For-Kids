@@ -6,28 +6,37 @@ using UnityEngine.SceneManagement;
 
 public class LevelMenu : MonoBehaviour {
     public string sceneLvlName;
+    public States.StateLevelMenu stat_levelMenu;
+    public Sprite completedImg, enabledImg, disabledImg;
 
-    private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
-        animator = GetComponent<Animator>(); // get animator component
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    private void LateUpdate()
+    private void Update()
     {
-        // if current animation is triggered, set it off
-        if (animator.GetBool("triggered"))
-            animator.SetBool("triggered", false);
+        switch(stat_levelMenu)
+        {
+            case States.StateLevelMenu.COMPLETED:
+                spriteRenderer.sprite = completedImg;
+                break;
+            case States.StateLevelMenu.ENABLED:
+                spriteRenderer.sprite = enabledImg;
+                break;
+            case States.StateLevelMenu.DISABLED:
+                spriteRenderer.sprite = disabledImg;
+                break;
+        }
     }
 
     private void OnMouseDown()
     {
         // if user clicked, goto level scene and trigger animation
-        if (Input.GetKey(KeyCode.Mouse0)) {
-            animator.SetBool("triggered", true);
+        if (Input.GetKey(KeyCode.Mouse0))
             // SceneManager.LoadScene(sceneLvlName);
             Debug.Log("Go to scene: " + sceneLvlName);
-        }
     }
 }
