@@ -34,9 +34,8 @@ public class LevelMenu : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        // if user clicked, goto level scene and trigger animation
-        if (Input.GetKey(KeyCode.Mouse0))
-            // SceneManager.LoadScene(sceneLvlName);
-            Debug.Log("Go to scene: " + sceneLvlName);
+        if(stat_levelMenu != States.StateLevelMenu.DISABLED) // if current state of the level is not DISABLED
+            if (Input.GetKey(KeyCode.Mouse0)) // if user clicked, goto level scene and trigger animation
+                SceneManager.LoadScene(sceneLvlName);
     }
 }
