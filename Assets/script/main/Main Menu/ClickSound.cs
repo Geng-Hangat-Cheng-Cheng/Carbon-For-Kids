@@ -32,23 +32,14 @@ public class ClickSound : MonoBehaviour {
         source.clip = sound;
         source.playOnAwake = false;
         //Any other settings you want to initialize...
-
-        button.onClick.AddListener(()=> PlaySound());
-    }
-	
-
-    void PlaySound()
-    {
-        source.PlayOneShot(sound);
-    }
-
-    void SettingsSound()
-    {
-        source.PlayOneShot(sound);
     }
 
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("Test saja");
+            source.PlayOneShot(sound);
+        }
+    }
 }
