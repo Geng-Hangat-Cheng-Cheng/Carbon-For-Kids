@@ -9,12 +9,9 @@ public class UIScript: MonoBehaviour {
     {
         transform.position = goCanvStartGame.GetComponent<Transform>().position;
 
-        if (goCanvStartGame.activeSelf)
-            goCanvStartGame.SetActive(true);
-        if (goCanvInGame.activeSelf)
-            goCanvInGame.SetActive(false);
-        if (goCanvEndGame.activeSelf)
-            goCanvEndGame.SetActive(false);
+        goCanvStartGame.SetActive(true);
+        goCanvInGame.SetActive(false);
+        goCanvEndGame.SetActive(false);
     }
 
     public void startGame()
@@ -22,7 +19,11 @@ public class UIScript: MonoBehaviour {
         transform.position = goCanvInGame.GetComponent<Transform>().position;
 
         if (!goCanvInGame.activeSelf)
+        {
+            goCanvStartGame.SetActive(false);
             goCanvInGame.SetActive(true);
+            goCanvEndGame.SetActive(false);
+        }
     }
 
     public void endGame()
@@ -30,7 +31,11 @@ public class UIScript: MonoBehaviour {
         transform.position = goCanvEndGame.GetComponent<Transform>().position;
 
         if (!goCanvEndGame.activeSelf)
+        {
+            goCanvStartGame.SetActive(false);
+            goCanvInGame.SetActive(false);
             goCanvEndGame.SetActive(true);
+        }
     }
 
     public void exitLevel()
