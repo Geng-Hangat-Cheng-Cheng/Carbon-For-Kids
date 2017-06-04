@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class UIScript: MonoBehaviour {
     public GameObject goCanvStartGame, goCanvInGame, goCanvEndGame;
@@ -40,6 +42,14 @@ public class UIScript: MonoBehaviour {
 
     public void exitLevel()
     {
+        // dissable all of ui
+        goCanvStartGame.SetActive(false);
+        goCanvInGame.SetActive(false);
+        goCanvEndGame.SetActive(false);
 
+        // save level completion data here (into serializable object)
+
+        // goto level select screen
+        SceneManager.LoadScene("scene_lvlMenu");
     }
 }

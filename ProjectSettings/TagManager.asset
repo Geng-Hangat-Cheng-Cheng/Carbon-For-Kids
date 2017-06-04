@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - menu_people
+  - menu_tree
+  - menu_water
+  - menu_mineral
+  - menu_wind
   layers:
   - Default
   - TransparentFX
@@ -15,7 +20,7 @@ TagManager:
   - 
   - touch
   - cam
-  - 
+  - bg
   - 
   - 
   - 
