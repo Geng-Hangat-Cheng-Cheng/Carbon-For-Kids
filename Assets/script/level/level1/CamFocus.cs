@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.EventSystems;
 
 public class CamFocus : MonoBehaviour {
     public float lerpTime;
@@ -35,7 +35,7 @@ public class CamFocus : MonoBehaviour {
         initOrthoSize = camProp.orthographicSize;
         initCamPos = transform.position;
 
-        // game stat
+        // init game stat
         currentMenu = 0;
         gameCompleted = false;
         menuStat = new bool[5];
@@ -46,60 +46,60 @@ public class CamFocus : MonoBehaviour {
         // check for input
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            GameObject clickedGO;
+            if(!EventSystem.current.IsPointerOverGameObject())
+            {
+                GameObject clickedGO = getClickedGO(); // get clicked gameobject
 
-            clickedGO = getClickedGO();
-
-            if (clickedGO != null)
-                if(clickedGO.layer == LayerMask.NameToLayer("touch"))
-                {
-                    // load description for the menus
-                    switch (clickedGO.tag)
+                if (clickedGO != null)
+                    if (clickedGO.layer == LayerMask.NameToLayer("touch"))
                     {
-                        case "menu_people":
-                            currentMenu = 0;
-                            objTitle = "People";
-                            objDescription = "This is people and animal.";
-                            break;
-                        case "menu_tree":
-                            currentMenu = 1;
-                            objTitle = "Tree";
-                            objDescription = "This is tree.";
-                            break;
-                        case "menu_water":
-                            currentMenu = 2;
-                            objTitle = "Water";
-                            objDescription = "This is water.";
-                            break;
-                        case "menu_mineral":
-                            currentMenu = 3;
-                            objTitle = "Mineral";
-                            objDescription = "This is mineral.";
-                            break;
-                        case "menu_wind":
-                            currentMenu = 4;
-                            objTitle = "Wind";
-                            objDescription = "This is wind.";
-                            break;
-                    }
-                    
-                    transform.position = Vector3.Lerp(transform.position, clickedGO.GetComponent<Transform>().position, lerpTime); // move cam to the clicked object
-                    
-                    camProp.orthographicSize = camProp.orthographicSize / 1.5f; // zoom the cam to the clicked obj
-                    transform.position = initCamPos; // prevent the z-values to change
+                        switch (clickedGO.tag) // load description for the menus
+                        {
+                            case "menu_people":
+                                currentMenu = 0;
+                                objTitle = "People";
+                                objDescription = "This is people and animal.";
+                                break;
+                            case "menu_tree":
+                                currentMenu = 1;
+                                objTitle = "Tree";
+                                objDescription = "This is tree.";
+                                break;
+                            case "menu_water":
+                                currentMenu = 2;
+                                objTitle = "Water";
+                                objDescription = "This is water.";
+                                break;
+                            case "menu_mineral":
+                                currentMenu = 3;
+                                objTitle = "Mineral";
+                                objDescription = "This is mineral.";
+                                break;
+                            case "menu_wind":
+                                currentMenu = 4;
+                                objTitle = "Wind";
+                                objDescription = "This is wind.";
+                                break;
+                        }
 
-                    // show ui for the clicked obj
-                    uiObjTitle.GetComponent<Text>().text = objTitle; // set obj ui for title
-                    uiObjDesc.GetComponent<Text>().text = objDescription; // set obj ui for description
-                    uiDesc.SetActive(true);
-                }
+                        Transform clickedGoTrans = clickedGO.GetComponent<Transform>(); // get transform component of clicked gameobject
+
+                        transform.position = new Vector3(clickedGoTrans.position.x, clickedGoTrans.position.y, transform.position.z); // move cam to the clicked object
+                        camProp.orthographicSize = camProp.orthographicSize / 1.5f; // zoom the cam to the clicked obj
+
+                        // show ui for the clicked obj
+                        uiObjTitle.GetComponent<Text>().text = objTitle; // set obj ui for title
+                        uiObjDesc.GetComponent<Text>().text = objDescription; // set obj ui for description
+                        uiDesc.SetActive(true); // show ui
+                    }
+            }
         }
 
-        checkGameStat();
+        checkGameStat(); // check the game status
     }
 
     // other methods
-    public void updateMenuStat()
+    public void updateMenuStat() // update the status of each menu
     {
         menuStat[currentMenu] = true;
 
@@ -108,7 +108,7 @@ public class CamFocus : MonoBehaviour {
         transform.position = initCamPos;
     }
 
-    private void checkGameStat()
+    private void checkGameStat() // check whether the game has been completed or not
     {
         // check if all of the menu has been done or not
         foreach(bool val in menuStat)
@@ -116,7 +116,7 @@ public class CamFocus : MonoBehaviour {
             if (!val)
             {
                 gameCompleted = false;
-                break;
+                return;
             }
             else
                 gameCompleted = true;
@@ -131,7 +131,7 @@ public class CamFocus : MonoBehaviour {
         }
     }
 
-    private GameObject getClickedGO()
+    private GameObject getClickedGO() // get the gameobject when being clicked
     {
         Ray rayInfo;
         RaycastHit2D hitInfo;
