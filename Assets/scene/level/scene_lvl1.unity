@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 98044045}
   - component: {fileID: 98044046}
   - component: {fileID: 98044047}
+  - component: {fileID: 98044048}
   m_Layer: 8
   m_Name: minerals
   m_TagString: menu_mineral
@@ -297,6 +298,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16.905483, y: 21.357002}
   m_EdgeRadius: 0
+--- !u!95 &98044048
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 98044044}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 381cb1f3d84599244ad032f1eb50935a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &165018471
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +634,7 @@ GameObject:
   - component: {fileID: 631115394}
   - component: {fileID: 631115395}
   - component: {fileID: 631115396}
+  - component: {fileID: 631115397}
   m_Layer: 8
   m_Name: water
   m_TagString: menu_water
@@ -701,6 +720,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6140511, y: 0.9634477}
   m_EdgeRadius: 0
+--- !u!95 &631115397
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 631115393}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177191fbf8aec0845bcb69aecd78e295, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &641988756
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,7 +952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &657510896
 Transform:
   m_ObjectHideFlags: 0
@@ -1753,6 +1789,7 @@ GameObject:
   - component: {fileID: 1292627720}
   - component: {fileID: 1292627719}
   - component: {fileID: 1292627721}
+  - component: {fileID: 1292627722}
   m_Layer: 8
   m_Name: cloud
   m_TagString: menu_wind
@@ -1838,6 +1875,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.24, y: 6.65}
   m_EdgeRadius: 0
+--- !u!95 &1292627722
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1292627718}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 88605a2fdf5537848890255c7e107b0a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1322391930
 GameObject:
   m_ObjectHideFlags: 0
@@ -1922,6 +1976,7 @@ GameObject:
   - component: {fileID: 1342410089}
   - component: {fileID: 1342410088}
   - component: {fileID: 1342410090}
+  - component: {fileID: 1342410091}
   m_Layer: 8
   m_Name: people & animal
   m_TagString: menu_people
@@ -2007,6 +2062,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6377764, y: 5.9491987}
   m_EdgeRadius: 0
+--- !u!95 &1342410091
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1342410087}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0983ad816da793644a27c5d2f180d910, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1361440790
 GameObject:
   m_ObjectHideFlags: 0
@@ -2313,6 +2385,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 641988763}
+        m_MethodName: stopAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1527017193
@@ -2501,6 +2584,7 @@ GameObject:
   - component: {fileID: 2004766545}
   - component: {fileID: 2004766546}
   - component: {fileID: 2004766547}
+  - component: {fileID: 2004766548}
   m_Layer: 8
   m_Name: tree
   m_TagString: menu_tree
@@ -2586,6 +2670,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.90164864, y: 1.2151399}
   m_EdgeRadius: 0
+--- !u!95 &2004766548
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004766544}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2094626391a8df84892cfc10239eadfb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2025662044
 GameObject:
   m_ObjectHideFlags: 0

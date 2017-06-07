@@ -7,6 +7,13 @@ using UnityEngine.SceneManagement;
 public class UIScript: MonoBehaviour {
     public GameObject goCanvStartGame, goCanvInGame, goCanvEndGame;
 
+    private DataManager dataManager;
+
+    private void Awake()
+    {
+        dataManager = GetComponent<DataManager>();
+    }
+
     private void Start()
     {
         transform.position = goCanvStartGame.GetComponent<Transform>().position; // set the pos of cam to the start canvas
@@ -45,7 +52,6 @@ public class UIScript: MonoBehaviour {
         goCanvEndGame.SetActive(false);
 
         // save level completion data here (into serializable object)
-
 
         SceneManager.LoadScene("scene_lvlMenu"); // goto level select screen
     }

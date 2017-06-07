@@ -18,6 +18,8 @@ public class CamFocus : MonoBehaviour {
     private bool gameCompleted;
     private bool[] menuStat;
 
+    private Animator goAnimator;
+
     // basic methods
     private void Awake()
     {
@@ -53,6 +55,8 @@ public class CamFocus : MonoBehaviour {
                 if (clickedGO != null)
                     if (clickedGO.layer == LayerMask.NameToLayer("touch"))
                     {
+                        goAnimator = clickedGO.GetComponent<Animator>();
+
                         switch (clickedGO.tag) // load description for the menus
                         {
                             case "menu_people":
@@ -86,6 +90,7 @@ public class CamFocus : MonoBehaviour {
 
                         transform.position = new Vector3(clickedGoTrans.position.x, clickedGoTrans.position.y, transform.position.z); // move cam to the clicked object
                         camProp.orthographicSize = camProp.orthographicSize / 1.5f; // zoom the cam to the clicked obj
+                        goAnimator.SetBool("click", true); // do animation for clicked object
 
                         // show ui for the clicked obj
                         uiObjTitle.GetComponent<Text>().text = objTitle; // set obj ui for title
@@ -129,6 +134,11 @@ public class CamFocus : MonoBehaviour {
             uiScript = GetComponent<UIScript>();
             uiScript.endGame();
         }
+    }
+
+    public void stopAnimation()
+    {
+        goAnimator.SetBool("click", false);
     }
 
     private GameObject getClickedGO() // get the gameobject when being clicked
