@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class CamFocus : MonoBehaviour {
-    public float lerpTime;
+    public float lerpTime, uiPosX, uiPosY;
     public GameObject uiDesc;
     public Text uiObjTitle, uiObjDesc; // ui for object description
 
@@ -88,7 +88,7 @@ public class CamFocus : MonoBehaviour {
 
                         Transform clickedGoTrans = clickedGO.GetComponent<Transform>(); // get transform component of clicked gameobject
 
-                        transform.position = new Vector3(clickedGoTrans.position.x, clickedGoTrans.position.y, transform.position.z); // move cam to the clicked object
+                        transform.position = new Vector3(clickedGoTrans.position.x + uiPosX, clickedGoTrans.position.y + uiPosY, transform.position.z); // move cam to the clicked object
                         camProp.orthographicSize = camProp.orthographicSize / 1.5f; // zoom the cam to the clicked obj
                         goAnimator.SetBool("click", true); // do animation for clicked object
 

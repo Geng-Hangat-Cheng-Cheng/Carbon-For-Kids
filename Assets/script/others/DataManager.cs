@@ -4,30 +4,52 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
 using UnityEngine;
-
-using Assets.script.others.entity;
-
+using System;
 
 public class DataManager : MonoBehaviour {
-    public void saveUserData(string path, User userData)
+    public string path;
+
+    public void saveData<T>(string fileName, T data)
     {
-        XmlSerializer serializer;
+        string json;
+        StreamWriter sw;
 
-        serializer = new XmlSerializer(typeof(User)); // init serializer
+        json = JsonUtility.ToJson(data, true);
+        sw = new StreamWriter(path + fileName + ".json");
 
-        // save data
-        using (FileStream stream = new FileStream(path, FileMode.Create))
-            serializer.Serialize(stream, this);
+        sw.WriteLine(json); // write json object
+        sw.Close();
     }
 
-    public User loadUserData(string path)
+    public T loadData<T>(string fileName)
     {
-        XmlSerializer serializer;
+        string json;
 
-        serializer = new XmlSerializer(typeof(User)); // init serializer
+        if (!File.Exists(path + fileName + ".json"))
+            return default(T);
 
-        // load the data
-        using (FileStream stream = new FileStream(path, FileMode.Open))
-            return serializer.Deserialize(stream) as User;
+        json = File.ReadAllText(path + fileName + ".json");
+
+        return JsonUtility.FromJson<T>(json); // return as object
+    }
+}
+
+// model classes
+[Serializable]
+public class User
+{
+    public States.StateLevelMenu[] levelStates;
+
+    public User()
+    {
+        levelStates = new States.StateLevelMenu[]
+        {
+            States.StateLevelMenu.ENABLED,
+            States.StateLevelMenu.DISABLED,
+            States.StateLevelMenu.DISABLED,
+            States.StateLevelMenu.DISABLED,
+            States.StateLevelMenu.DISABLED,
+            States.StateLevelMenu.DISABLED
+        };
     }
 }

@@ -1,26 +1,32 @@
-using Assets.script.others.entity;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class MenuManager : MonoBehaviour {
     public List<LevelMenu> levels;
 
     private User userData;
+    private DataManager dataManager;
+
+    private void Awake()
+    {
+        dataManager = GetComponent<DataManager>();
+    }
 
     private void Start()
     {
-        foreach (LevelMenu level in levels)
-            level.stat_levelMenu = States.StateLevelMenu.DISABLED;
+        string fileName;
 
         // load user data here
+        fileName = "user-data";
+        userData = dataManager.loadData<User>(fileName);
 
-        /* set level menu status in userData like this
-        for(int x=0; x<levels.Count; x++)
-            levels[x].stat_levelMenu = userData.LevelStates[x];
-        */
+        if (userData == null)
+            userData = new User();
 
-        // example
-        levels[0].stat_levelMenu = States.StateLevelMenu.ENABLED;
+        // initialize state of each level according to user data
+        for (int x=0; x<levels.Count; x++)
+            levels[x].stat_levelMenu = userData.levelStates[x];
     }
 }
