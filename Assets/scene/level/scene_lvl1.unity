@@ -841,6 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a6726c2bca5f51439a12b6f49ffbd0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  auBtnClick: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
   goCanvStartGame: {fileID: 657510895}
   goCanvInGame: {fileID: 1361440790}
   goCanvEndGame: {fileID: 1222988531}
@@ -861,13 +862,14 @@ MonoBehaviour:
   uiDesc: {fileID: 677195859}
   uiObjTitle: {fileID: 1753615776}
   uiObjDesc: {fileID: 1322391932}
+  auObjClick: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
 --- !u!82 &641988764
 AudioSource:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 641988756}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 54e98585397cacb4787e4fed85e784f9, type: 3}
@@ -952,7 +954,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e267f1dcfba0f4bae4288e94734de9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: D:\\
 --- !u!1 &657510895
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,7 +968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &657510896
 Transform:
   m_ObjectHideFlags: 0
@@ -1170,6 +1171,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: scene_lvlMenu
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 641988762}
+        m_MethodName: playBtnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1637,7 +1649,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1222988532
 Transform:
   m_ObjectHideFlags: 0
@@ -2278,6 +2290,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 641988762}
+        m_MethodName: playBtnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1448246018
@@ -2402,6 +2425,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 641988763}
         m_MethodName: stopAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 641988762}
+        m_MethodName: playBtnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

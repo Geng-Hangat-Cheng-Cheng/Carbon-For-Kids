@@ -23,7 +23,10 @@ public class MenuManager : MonoBehaviour {
         userData = dataManager.loadData<User>(fileName);
 
         if (userData == null)
+        {
             userData = new User();
+            dataManager.saveData<User>(fileName, userData);
+        }
 
         // initialize state of each level according to user data
         for (int x=0; x<levels.Count; x++)

@@ -7,7 +7,12 @@ using UnityEngine;
 using System;
 
 public class DataManager : MonoBehaviour {
-    public string path;
+    private string path;
+
+    private void Awake()
+    {
+        path = Application.persistentDataPath;
+    }
 
     public void saveData<T>(string fileName, T data)
     {

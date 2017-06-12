@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class LevelMenu : MonoBehaviour {
@@ -9,11 +10,11 @@ public class LevelMenu : MonoBehaviour {
     public States.StateLevelMenu stat_levelMenu;
     public Sprite completedImg, enabledImg, disabledImg;
 
-    private SpriteRenderer spriteRenderer;
+    private Image btnImg;
 
     private void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        btnImg = GetComponent<Image>();
     }
 
     private void Update()
@@ -21,21 +22,20 @@ public class LevelMenu : MonoBehaviour {
         switch(stat_levelMenu)
         {
             case States.StateLevelMenu.COMPLETED:
-                spriteRenderer.sprite = completedImg;
+                btnImg.sprite = completedImg;
                 break;
             case States.StateLevelMenu.ENABLED:
-                spriteRenderer.sprite = enabledImg;
+                btnImg.sprite = enabledImg;
                 break;
             case States.StateLevelMenu.DISABLED:
-                spriteRenderer.sprite = disabledImg;
+                btnImg.sprite = disabledImg;
                 break;
         }
     }
 
-    private void OnMouseDown()
+    public void gotoNextScene()
     {
-        if(stat_levelMenu != States.StateLevelMenu.DISABLED) // if current state of the level is not DISABLED
-            if (Input.GetKey(KeyCode.Mouse0)) // if user clicked, goto level scene and trigger animation
-                SceneManager.LoadScene(sceneLvlName);
+        if (stat_levelMenu != States.StateLevelMenu.DISABLED) // if current state of the level is not DISABLED
+            SceneManager.LoadScene(sceneLvlName); // if user clicked, goto level scene and trigger animation
     }
 }

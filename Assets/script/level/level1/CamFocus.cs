@@ -8,6 +8,7 @@ public class CamFocus : MonoBehaviour {
     public float lerpTime, uiPosX, uiPosY;
     public GameObject uiDesc;
     public Text uiObjTitle, uiObjDesc; // ui for object description
+    public AudioClip auObjClick;
 
     private Camera camProp;
     private float initOrthoSize;
@@ -19,11 +20,13 @@ public class CamFocus : MonoBehaviour {
     private bool[] menuStat;
 
     private Animator goAnimator;
+    private AudioSource audioSource;
 
     // basic methods
     private void Awake()
     {
         camProp = GetComponent<Camera>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -56,6 +59,7 @@ public class CamFocus : MonoBehaviour {
                     if (clickedGO.layer == LayerMask.NameToLayer("touch"))
                     {
                         goAnimator = clickedGO.GetComponent<Animator>();
+                        audioSource.PlayOneShot(auObjClick); // play sound
 
                         switch (clickedGO.tag) // load description for the menus
                         {

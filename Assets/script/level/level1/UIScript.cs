@@ -6,13 +6,16 @@ using UnityEngine.SceneManagement;
 
 
 public class UIScript: MonoBehaviour {
+    public AudioClip auBtnClick;
     public GameObject goCanvStartGame, goCanvInGame, goCanvEndGame;
 
     private DataManager dataManager;
+    private AudioSource audioSource;
 
     private void Awake()
     {
         dataManager = GetComponent<DataManager>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -75,5 +78,10 @@ public class UIScript: MonoBehaviour {
         dataManager.saveData<User>(fileName, data); // save user data
 
         SceneManager.LoadScene(sceneToLoad); // goto level select screen
+    }
+
+    public void playBtnClick()
+    {
+        audioSource.PlayOneShot(auBtnClick); // play audio
     }
 }
