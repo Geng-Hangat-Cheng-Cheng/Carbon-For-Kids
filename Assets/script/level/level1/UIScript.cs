@@ -84,4 +84,9 @@ public class UIScript: MonoBehaviour {
     {
         audioSource.PlayOneShot(auBtnClick); // play audio
     }
+
+    public void gotoScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 }
