@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 98044046}
   - component: {fileID: 98044047}
   - component: {fileID: 98044048}
+  - component: {fileID: 98044049}
   m_Layer: 8
   m_Name: minerals
   m_TagString: menu_mineral
@@ -316,6 +317,24 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &98044049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 98044044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6efc31192b2c845abebd170cb48dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  title: test title
+  desc: test desc
+  audioSource: {fileID: 641988764}
+  clickSFX: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
+  camBehaviour: {fileID: 641988766}
+  uiBehaviour: {fileID: 784596105}
 --- !u!1 &165018471
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,6 +655,7 @@ GameObject:
   - component: {fileID: 631115395}
   - component: {fileID: 631115396}
   - component: {fileID: 631115397}
+  - component: {fileID: 631115398}
   m_Layer: 8
   m_Name: water
   m_TagString: menu_water
@@ -738,6 +758,24 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &631115398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 631115393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6efc31192b2c845abebd170cb48dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  title: test title
+  desc: test desc
+  audioSource: {fileID: 641988764}
+  clickSFX: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
+  camBehaviour: {fileID: 641988766}
+  uiBehaviour: {fileID: 784596105}
 --- !u!1 &641988756
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,6 +792,8 @@ GameObject:
   - component: {fileID: 641988762}
   - component: {fileID: 641988763}
   - component: {fileID: 641988765}
+  - component: {fileID: 641988766}
+  - component: {fileID: 641988767}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -837,7 +877,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 641988756}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a6726c2bca5f51439a12b6f49ffbd0b, type: 3}
   m_Name: 
@@ -852,7 +892,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 641988756}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fb54fc212b3cda48a85295697e430bc, type: 3}
   m_Name: 
@@ -864,6 +904,16 @@ MonoBehaviour:
   uiObjTitle: {fileID: 1753615776}
   uiObjDesc: {fileID: 1322391932}
   auObjClick: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
+  camProp: {fileID: 0}
+  initOrthoSize: 0
+  initCamPos: {x: 0, y: 0, z: 0}
+  objTitle: 
+  objDescription: 
+  currentMenu: 0
+  gameCompleted: 0
+  menuStat: []
+  goAnimator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!82 &641988764
 AudioSource:
   m_ObjectHideFlags: 0
@@ -955,6 +1005,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e267f1dcfba0f4bae4288e94734de9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &641988766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 641988756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10dc53d31ed44f04fb8ab6b856888963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &641988767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 641988756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 182a563cd3a8f894d8b2501b44df4373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  homeScene: scene_lvlMenu
+  objActivated:
+  - {fileID: 1292627723}
+  - {fileID: 2004766549}
+  - {fileID: 1342410092}
+  - {fileID: 98044049}
+  - {fileID: 631115398}
+  uiBehaviour: {fileID: 784596105}
 --- !u!1 &657510895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,6 +1109,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 784596104}
+  - component: {fileID: 784596105}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -1053,6 +1134,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &784596105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 784596103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c268ac999f08039428abbc6ded3d0f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainUIs:
+  - {fileID: 657510895}
+  - {fileID: 1222988531}
+  subUI: {fileID: 1361440790}
+  title: {fileID: 1753615776}
+  description: {fileID: 1322391932}
 --- !u!1 &855537783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,7 +1160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 855537784}
   m_Layer: 0
-  m_Name: In Game
+  m_Name: Obj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1164,17 +1262,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 641988762}
-        m_MethodName: exitLevel
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: scene_lvlMenu
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 641988762}
         m_MethodName: playBtnClick
         m_Mode: 1
         m_Arguments:
@@ -1183,6 +1270,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 641988767}
+        m_MethodName: exitLevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: scene_lvlMenu
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1645,7 +1743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1222988532}
   m_Layer: 5
-  m_Name: go_canv_engGame
+  m_Name: go_canv_endGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1818,6 +1916,7 @@ GameObject:
   - component: {fileID: 1292627719}
   - component: {fileID: 1292627721}
   - component: {fileID: 1292627722}
+  - component: {fileID: 1292627723}
   m_Layer: 8
   m_Name: cloud
   m_TagString: menu_wind
@@ -1920,6 +2019,24 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1292627723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1292627718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6efc31192b2c845abebd170cb48dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  title: test title
+  desc: test desc
+  audioSource: {fileID: 641988764}
+  clickSFX: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
+  camBehaviour: {fileID: 641988766}
+  uiBehaviour: {fileID: 784596105}
 --- !u!1 &1322391930
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,6 +2122,7 @@ GameObject:
   - component: {fileID: 1342410088}
   - component: {fileID: 1342410090}
   - component: {fileID: 1342410091}
+  - component: {fileID: 1342410092}
   m_Layer: 8
   m_Name: people & animal
   m_TagString: menu_people
@@ -2107,6 +2225,24 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1342410092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1342410087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6efc31192b2c845abebd170cb48dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  title: test title
+  desc: test desc
+  audioSource: {fileID: 641988764}
+  clickSFX: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
+  camBehaviour: {fileID: 641988766}
+  uiBehaviour: {fileID: 784596105}
 --- !u!1 &1361440790
 GameObject:
   m_ObjectHideFlags: 0
@@ -2423,9 +2559,9 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 641988763}
-        m_MethodName: stopAnimation
+        m_CallState: 0
+      - m_Target: {fileID: 641988766}
+        m_MethodName: zoomOut
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2435,8 +2571,86 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 641988762}
-        m_MethodName: playBtnClick
+      - m_Target: {fileID: 784596105}
+        m_MethodName: hideSubUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 641988766}
+        m_MethodName: playSound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1292627723}
+        m_MethodName: deactivateObj
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2004766549}
+        m_MethodName: deactivateObj
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1342410092}
+        m_MethodName: deactivateObj
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 98044049}
+        m_MethodName: deactivateObj
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 631115398}
+        m_MethodName: deactivateObj
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 641988767}
+        m_MethodName: checkCompletion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2768,6 +2982,7 @@ GameObject:
   - component: {fileID: 2004766546}
   - component: {fileID: 2004766547}
   - component: {fileID: 2004766548}
+  - component: {fileID: 2004766549}
   m_Layer: 8
   m_Name: tree
   m_TagString: menu_tree
@@ -2870,6 +3085,24 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &2004766549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004766544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6efc31192b2c845abebd170cb48dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  title: test title
+  desc: test desc
+  audioSource: {fileID: 641988764}
+  clickSFX: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
+  camBehaviour: {fileID: 641988766}
+  uiBehaviour: {fileID: 784596105}
 --- !u!1 &2020103609
 GameObject:
   m_ObjectHideFlags: 0
