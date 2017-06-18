@@ -14,6 +14,8 @@ public class UIBehaviour : MonoBehaviour {
     {
         hideMainUI();
         hideSubUI();
+
+        showMainUI(0);
     }
 
     // other methods

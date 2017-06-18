@@ -18,13 +18,18 @@ public class GameBehaviour : MonoBehaviour {
     }
 
     // other methods
-    public void checkCompletion()
+    public void checkCompletion(int endUICode)
     {
         foreach (ObjectBehaviour obj in objActivated)
             if (!obj.activated)
                 return;
 
-        uiBehaviour.showMainUI(1);
+        uiBehaviour.showMainUI(endUICode);
+    }
+
+    public void changeScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 
     public void exitLevel(string sceneToLoad)

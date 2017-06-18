@@ -329,8 +329,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 0
-  title: test title
-  desc: test desc
+  title: Minerals
+  desc: 'Carbon is involved in the creation of minerals. If oil, gas and coals have
+    different impurities in their composition, then diamond and graphite are pure
+    carbon. '
   audioSource: {fileID: 641988764}
   clickSFX: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
   camBehaviour: {fileID: 641988766}
@@ -770,8 +772,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 0
-  title: test title
-  desc: test desc
+  title: Water
+  desc: 'The main carbon stocks on Earth are in the form of carbon dioxide, which
+    is contained in the atmosphere and dissolved in the World Ocean, that is, carbon
+    dioxide  '
   audioSource: {fileID: 641988764}
   clickSFX: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
   camBehaviour: {fileID: 641988766}
@@ -789,8 +793,6 @@ GameObject:
   - component: {fileID: 641988758}
   - component: {fileID: 641988757}
   - component: {fileID: 641988764}
-  - component: {fileID: 641988762}
-  - component: {fileID: 641988763}
   - component: {fileID: 641988765}
   - component: {fileID: 641988766}
   - component: {fileID: 641988767}
@@ -871,49 +873,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &641988762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 641988756}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a6726c2bca5f51439a12b6f49ffbd0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  auBtnClick: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
-  goCanvStartGame: {fileID: 657510895}
-  goCanvInGame: {fileID: 1361440790}
-  goCanvEndGame: {fileID: 1222988531}
---- !u!114 &641988763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 641988756}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fb54fc212b3cda48a85295697e430bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lerpTime: 0.25
-  uiPosX: 2
-  uiPosY: 1
-  uiDesc: {fileID: 677195859}
-  uiObjTitle: {fileID: 1753615776}
-  uiObjDesc: {fileID: 1322391932}
-  auObjClick: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
-  camProp: {fileID: 0}
-  initOrthoSize: 0
-  initCamPos: {x: 0, y: 0, z: 0}
-  objTitle: 
-  objDescription: 
-  currentMenu: 0
-  gameCompleted: 0
-  menuStat: []
-  goAnimator: {fileID: 0}
-  audioSource: {fileID: 0}
 --- !u!82 &641988764
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1147,8 +1106,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainUIs:
   - {fileID: 657510895}
+  - {fileID: 1361440790}
   - {fileID: 1222988531}
-  subUI: {fileID: 1361440790}
+  subUI: {fileID: 677195859}
   title: {fileID: 1753615776}
   description: {fileID: 1322391932}
 --- !u!1 &855537783
@@ -1261,7 +1221,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 641988762}
+      - m_Target: {fileID: 0}
         m_MethodName: playBtnClick
         m_Mode: 1
         m_Arguments:
@@ -2031,8 +1991,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 0
-  title: test title
-  desc: test desc
+  title: Air
+  desc: Carbon takes one of the major part of the air
   audioSource: {fileID: 641988764}
   clickSFX: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
   camBehaviour: {fileID: 641988766}
@@ -2237,8 +2197,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 0
-  title: test title
-  desc: test desc
+  title: Man
+  desc: 'Carbon is a part of all compounds involved in building living organisms and
+    ensuring their vital functions - proteins, fats, carbohydrates, vitamins, nucleic
+    acids, hormones, etc. '
   audioSource: {fileID: 641988764}
   clickSFX: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
   camBehaviour: {fileID: 641988766}
@@ -2416,8 +2378,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 641988762}
-        m_MethodName: startGame
+      - m_Target: {fileID: 784596105}
+        m_MethodName: hideMainUI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2427,13 +2389,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 641988762}
-        m_MethodName: playBtnClick
-        m_Mode: 1
+      - m_Target: {fileID: 784596105}
+        m_MethodName: showMainUI
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2549,7 +2511,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 641988763}
+      - m_Target: {fileID: 0}
         m_MethodName: updateMenuStat
         m_Mode: 1
         m_Arguments:
@@ -2651,11 +2613,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 641988767}
         m_MethodName: checkCompletion
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2771,19 +2733,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 641988756}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 641988762}
-        m_MethodName: gotoScene
+      - m_Target: {fileID: 641988767}
+        m_MethodName: changeScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3097,8 +3048,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 0
-  title: test title
-  desc: test desc
+  title: Tree
+  desc: Carbon is a part of carbon dioxide, which assimilates plants and as a result
+    of photosynthesis is first converted into glucose, and then into other organic
+    substances. Many plants without light are killed precisely because they can not
+    absorb carbon dioxide without it, that is, they are doomed to carbon starvation.
   audioSource: {fileID: 641988764}
   clickSFX: {fileID: 8300000, guid: 058d482abe122db42803f5e764ac203a, type: 3}
   camBehaviour: {fileID: 641988766}
