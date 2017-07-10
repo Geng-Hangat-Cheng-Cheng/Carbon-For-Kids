@@ -4,25 +4,25 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 
-public class ObjectBehaviour : MonoBehaviour {
-    public bool activated;
-    public string title, desc;
+public class ObjectBehaviour : MonoBehaviour { // behaviour of each of the objects in level 1
+    public bool activated; // the state of the object
+    public string title, desc; // the title and description for the oobject
 
-    public AudioSource audioSource;
-    public AudioClip clickSFX;
+    public AudioSource audioSource; // audio source
+    public AudioClip clickSFX; // SFX for clicking the object
 
-    public CamBehaviour camBehaviour;
-    public UIBehaviour uiBehaviour;
+    public CamBehaviour camBehaviour; // behaviour of the cam
+    public UIBehaviour uiBehaviour; // behaviour of the UI
 
-    private Animator animator;
+    private Animator animator; // animator for the objects
 
     // behaviour methods
-    private void Awake()
+    private void Awake() // initialize private component variables
     {
         animator = GetComponent<Animator>();
     }
 
-    private void OnMouseDown()
+    private void OnMouseDown() // activate the object when player click the object
     {
         if (Input.GetKey(KeyCode.Mouse0))
             if (!EventSystem.current.IsPointerOverGameObject())
@@ -30,7 +30,7 @@ public class ObjectBehaviour : MonoBehaviour {
     }
 
     // other methods
-    public void activateObj()
+    public void activateObj() // activate the object by zoom into the object, show sub UI for the object and change the animation of the object
     {
         activated = true;
 
@@ -41,17 +41,17 @@ public class ObjectBehaviour : MonoBehaviour {
         uiBehaviour.showSubUI(title, desc);
     }
 
-    public void deactivateObj()
+    public void deactivateObj() // deactivate the object by changing the animation of the object to idle
     {
         playIdle();
     }
 
-    private void playIdle()
+    private void playIdle() // change the animation of the object to idle
     {
         animator.SetBool("click", false);
     }
 
-    private void playActivated()
+    private void playActivated() // change the animation for the object to activated
     {
         animator.SetBool("click", true);
     }

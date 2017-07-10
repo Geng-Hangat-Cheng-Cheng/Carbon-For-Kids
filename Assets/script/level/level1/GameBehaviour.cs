@@ -3,22 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameBehaviour : MonoBehaviour {
-    public string homeScene;
-    public List<ObjectBehaviour> objActivated;
+public class GameBehaviour : MonoBehaviour { // behaviour of the level 1 game
+    public string homeScene; // the scene name for home scene
+    public List<ObjectBehaviour> objActivated; // list of behaviour for each object
+    public UIBehaviour uiBehaviour; // behaviour for UI
 
-    public UIBehaviour uiBehaviour;
-
-    private DataManager dataManager;
+    private DataManager dataManager; // data manager to save user data
 
     // behaviour methods
-    private void Awake()
+    private void Awake() // initialize private variables
     {
         dataManager = GetComponent<DataManager>();
     }
 
     // other methods
-    public void checkCompletion(int endUICode)
+    public void checkCompletion(int endUICode) // check whether the user has completed the level 1 or not
     {
         foreach (ObjectBehaviour obj in objActivated)
             if (!obj.activated)
@@ -27,12 +26,12 @@ public class GameBehaviour : MonoBehaviour {
         uiBehaviour.showMainUI(endUICode);
     }
 
-    public void changeScene(string sceneName)
+    public void changeScene(string sceneName) // change the scene according to the 'sceneName'
     {
         SceneManager.LoadScene(sceneName);
     }
 
-    public void exitLevel(string sceneToLoad)
+    public void exitLevel(string sceneToLoad) // exit the level and goto other scene according to the 'sceneToLoad'
     {
         User data;
         string fileName;
